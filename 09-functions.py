@@ -47,7 +47,50 @@ pizzaOrder(12, "BBQ", "Olives", "ABC", "XYZ")
 #Passing information back from them (return value from function)
 def add_numbers(val1, val2):
     ans = val1 + val2
-    return ans
+    return ans, "KJ", True, 3.142
 
 re = add_numbers(2,4)
 print("Print return value from function : ", re)
+
+#Functions as a variables
+def adds(a,b):
+    return a+b
+def subs(a,b):
+    return a-b
+
+result = adds(2,2) + subs(10,2)
+print(result)
+
+#function with local and global variables
+#function with local variable
+def beHappy():
+    name = "Mr Kamran"
+    print(f"{name} is very happy today.")
+
+beHappy()
+
+#function with global variable
+anotherName = "Mr ABC"
+def Sad():
+    print(f"{anotherName} is not happy today!")
+
+Sad()
+print(anotherName)
+
+
+#functions within functions
+def commissionCalc(sales):
+    if sales > 100:
+        return sales * 100
+    elif sales > 50:
+        return sales * 50
+    elif sales > 20:
+        return  sales * 20
+    else:
+        return 0
+
+def salaryCalc(basic,sales):
+    grossSalary = basic + commissionCalc(sales)
+    print(f"Your gross salary is {grossSalary}")
+
+salaryCalc(50000,150)
