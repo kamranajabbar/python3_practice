@@ -1,4 +1,4 @@
-#Chapter # 21,22,23 Loops and type casting
+#Chapter # 21,22,23,51,52 Loops and type casting
 
 for a in range(5):
     print(a, "=> Kamran =>", a)
@@ -54,16 +54,36 @@ for num in range(5):
         print(num, char)
 
 #Table print with loop
-table_number = int(input("Enter Table Number"))
-for a in range(1,11):
-    print(f"{table_number} * {a} = {table_number*a}")
+# table_number = int(input("Enter Table Number"))
+# for a in range(1,11):
+#     print(f"{table_number} * {a} = {table_number*a}")
 
 #Type casting
-user_input1 = input("Enter Sometning : ")
-print("Type is = ", type(user_input1))
+#user_input1 = input("Enter Something : ")
+#print("Enter some thing = ", type(user_input1))
 
-user_input2 = int(input("Enter Something : "))
-print("Type is = ", type(user_input2))
+#user_input2 = int(input("Enter Something : "))
+#print("Entered value value = ", type(user_input2))
 
-user_input3 = float(input("Enter Something : "))
-print("Type is = ", type(user_input3))
+#user_input3 = float(input("Enter Something : "))
+#print("Entered value type = ", type(user_input3))
+
+#While Loop
+#Example 1
+a = 0
+while a <= 10:
+    print(a, "Print while loop")
+    a += 1
+
+#Example 2
+flag = True
+favFoods = []
+
+while flag:
+    user_input = input("Enter food name : ")
+    if user_input == "Q":
+        flag = False
+    else:
+        favFoods.append(user_input)
+
+print("Your Entered Food Name Is: ",favFoods)
