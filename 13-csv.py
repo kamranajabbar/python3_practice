@@ -1,4 +1,12 @@
-#Chapter # 67 CSV
+#Chapter # 67-73 CSV files
+
+#67: CSV files
+#68: CSV files: Reading them
+#69: CSV files: Picking information out of them
+#70: CSV files: Loading information into them. Part 1
+#71: CSV files: Loading information into them. Part 2
+#72: CSV files: Loading information into them. Part 3
+#73: CSV files: Appending rows to them.
 
 import csv
 
